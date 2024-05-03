@@ -74,7 +74,7 @@ export const Hero = () => {
         mgRef.current.style.transform = `translateY(${translateY}px)`;
       }
       if (vgRef.current) {
-        const translateY = Math.min(scrollPos * 0.3, 300);
+        const translateY = Math.min(scrollPos * 0.4, 300);
         vgRef.current.style.transform = `translateY(${translateY}px)`;
       }
     };

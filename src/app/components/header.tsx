@@ -35,7 +35,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`flex w-screen justify-between items-center px-[80px] py-[64px] absolute z-30 text-[18px] leading-[21.78px] max-sm:px-[24px]`}
+      className={`flex w-[100%] box justify-between items-center px-[80px] py-[64px] absolute z-30 text-[18px] leading-[21.78px] max-sm:px-[24px]`}
     >
       <div className="flex gap-6 items-center">
         <div className="sm:hidden" ref={ref as RefObject<HTMLDivElement>}>
