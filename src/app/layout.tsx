@@ -1,14 +1,9 @@
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter as FontSans, Questrial } from "next/font/google";
+import { Inter as FontSans, PT_Serif, Questrial } from "next/font/google";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import "./globals.css";
-
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 const questrial = Questrial({
   weight: "400",
@@ -33,7 +28,6 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           questrial.className,
-          fontSans.variable
         )}
       >
         <Header />

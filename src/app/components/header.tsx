@@ -1,4 +1,5 @@
 "use client";
+import { ptSerif } from "@/assets/fonts";
 import useClickOutside from "@/lib/useClickOutside";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -67,7 +68,13 @@ export const Header = () => {
             </ul>
           </div>
         </div>
-        <h1 className="cursor-pointer" onClick={scrollTo}>
+        <h1
+          className={cn(
+            "text-[32px] leading-[38px] tracking-[1%] ",
+            ptSerif.className
+          )}
+          onClick={scrollTo}
+        >
           HILL
         </h1>
       </div>

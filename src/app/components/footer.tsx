@@ -1,12 +1,20 @@
+import { ptSerif } from "@/assets/fonts";
+import { cn } from "@/lib/utils";
+
 export const Footer = () => {
   return (
     <footer className="flex w-full mb-[120px] mt-[200px] pr-[230px] pl-[100px] h-full justify-center items-center max-lg:px-[40px]">
       <div className="max-w-[1460px] w-full flex max-lg:flex-col gap-7">
         <div className="flex-[1.45] flex flex-col justify-between">
           <div>
-            <p className="mb-[24px] text-[24px] leading-[36.4px] tracking-[1%]">
+            <h1
+              className={cn(
+                "text-[32px] leading-[38px] tracking-[1%] ",
+                ptSerif.className
+              )}
+            >
               HILL
-            </p>
+            </h1>
             <p className="font-bold text-[18px] leading-[32px]">
               Get out there & discover your next <br /> slope, mountain &
               destination!

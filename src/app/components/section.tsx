@@ -25,7 +25,8 @@ export const Section: FC<Props> = ({
     <section
       id={index}
       className={`max-w-[1460px] max-lg:flex-col-reverse max-lg:gap-[46px] relative z-[29] gap-[114px] flex items-center justify-center ${
-        align === "right" && "flex-row-reverse gap-[264px]"
+        align === "right" &&
+        "flex-row-reverse gap-[264px] max-[1300px]:gap-[114px]"
       }`}
     >
       <div className="flex flex-col gap-[27px] max-sm:text-[14px] max-lg:text-[16px] text-[18px] flex-[1] relative">

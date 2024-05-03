@@ -144,7 +144,10 @@ export const Hero = () => {
             onClick={() => scrollTo("01")}
           >
             <p className="leading-[21.76px] font-bold">scroll down</p>
-            <Arrow fill="#fff" rotate="90" />
+            <Arrow
+              fill="#fff"
+              rotate="90"
+            />
           </button>
         </div>
         <div />
