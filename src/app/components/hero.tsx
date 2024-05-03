@@ -90,7 +90,7 @@ export const Hero = () => {
   return (
     <div
       id="start"
-      className="relative w-full min-h-screen max-md:min-h-[120vh] max-sm:min-h-[55vh] max-[350px]:min-h-[30vh] flex items-start justify-center text-[18px] max-xl:text-[16px]"
+      className="relative w-full min-h-[1200px] max-md:min-h-[1440px] max-sm:min-h-[800px] max-[350px]:min-h-[30vh] flex items-start justify-center text-[18px] max-xl:text-[16px]"
     >
       <div
         className="absolute top-0 w-full h-[150vh] max-md:h-full"
@@ -123,7 +123,7 @@ export const Hero = () => {
         <Image src={vg} alt="vg" />
       </div>
 
-      <div className="flex items-center justify-between w-full mt-[300px] max-[500px]:mt-[150px] px-[64px] max-lg:px-[32px] relative z-[19] gap-6">
+      <div className="flex items-center justify-between w-full mt-[300px] max-[500px]:mt-[150px] px-[64px] max-lg:px-[32px] relative z-[28] gap-6">
         <div className="flex flex-col items-center gap-6 z-20">
           <p className="rotate-90 mb-6 whitespace-nowrap">Follow us</p>
           <Image className="cursor-pointer" src={instagram} alt="instagram" />
@@ -144,10 +144,7 @@ export const Hero = () => {
             onClick={() => scrollTo("01")}
           >
             <p className="leading-[21.76px] font-bold">scroll down</p>
-            <Arrow
-              fill="#fff"
-              rotate="90"
-            />
+            <Arrow fill="#fff" rotate="90" />
           </button>
         </div>
         <div />
