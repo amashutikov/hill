@@ -29,19 +29,19 @@ export const Footer = () => {
             <h2 className="mb-[8px] font-bold text-[24px] leading-[32px] text-[#FBD784]">
               More on The Blog
             </h2>
-            <p>About MNTN</p>
-            <p>Contributors & Writers</p>
-            <p>Write For Us</p>
-            <p>Contact Us</p>
-            <p>Privacy Policy</p>
+            <p className="cursor-pointer">About MNTN</p>
+            <p className="cursor-pointer">Contributors & Writers</p>
+            <p className="cursor-pointer">Write For Us</p>
+            <p className="cursor-pointer">Contact Us</p>
+            <p className="cursor-pointer">Privacy Policy</p>
           </div>
           <div className="flex flex-col gap-[16px]">
             <h2 className="mb-[8px] font-bold text-[24px] leading-[32px] text-[#FBD784]">
               More on HILL
             </h2>
-            <p>The Team</p>
-            <p>Jobs</p>
-            <p>Press</p>
+            <p className="cursor-pointer">The Team</p>
+            <p className="cursor-pointer">Jobs</p>
+            <p className="cursor-pointer">Press</p>
           </div>
         </div>
       </div>

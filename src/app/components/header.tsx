@@ -85,7 +85,7 @@ export const Header = () => {
           <li className="cursor-pointer">Blog</li>
         </ul>
       </nav>
-      <div className="flex gap-[8px]">
+      <div className="flex gap-[8px] cursor-pointer">
         <Image src={avatar} alt="avatar" />
         <p>Account</p>
       </div>

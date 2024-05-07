@@ -40,8 +40,14 @@ export const Section: FC<Props> = ({
           {title}
         </h1>
         <p className="leading-8 font-bold">{text}</p>
-        <button className="text-[#FBD784] leading-[21.76px] flex items-center gap-4">
-          <p>read more</p> <Arrow fill="#FBD784" className="" />
+        <button className="group text-[#FBD784] leading-[21.76px] flex items-center gap-4 hover:gap-5 transition-all duration-500 w-fit">
+          <div className="flex flex-col">
+            <p className="font-bold transition duration-300 text-[18px] leading-[21.76px]">
+              read more
+            </p>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#FBD784]"></span>
+          </div>
+          <Arrow fill="#FBD784" className="" />
         </button>
         <p className="absolute -top-[100px] -left-[148px] opacity-10 text-[240px] max-lg:text-[140px] max-sm:text-[88px] max-sm:-left-[33px] max-sm:-top-[110px] max-lg:-left-[80px] leading-[240px] font-bold text-white">
           {index}

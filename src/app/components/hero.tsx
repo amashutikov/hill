@@ -74,7 +74,7 @@ export const Hero = () => {
         mgRef.current.style.transform = `translateY(${translateY}px)`;
       }
       if (vgRef.current) {
-        const translateY = Math.min(scrollPos * 0.4, 300);
+        const translateY = Math.min(scrollPos * 0.35, 300);
         vgRef.current.style.transform = `translateY(${translateY}px)`;
       }
     };
@@ -140,11 +140,19 @@ export const Hero = () => {
             Be prepared for the Mountains and beyond!
           </h1>
           <button
-            className="w-fit flex items-center gap-4 relative z-[111]"
+            className="group w-fit flex items-center gap-4 relative z-[111]"
             onClick={() => scrollTo("01")}
           >
-            <p className="leading-[21.76px] font-bold">scroll down</p>
-            <Arrow fill="#fff" rotate="90" />
+            <div className="flex flex-col">
+              <p className="leading-[21.76px] transition duration-300 font-bold">
+                scroll down
+              </p>
+              <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+            </div>
+
+            <div>
+              <Arrow fill="#fff" rotate="90" />
+            </div>
           </button>
         </div>
         <div />
