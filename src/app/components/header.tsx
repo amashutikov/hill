@@ -68,15 +68,18 @@ export const Header = () => {
             </ul>
           </div>
         </div>
-        <h1
-          className={cn(
-            "text-[32px] leading-[38px] tracking-[1%] ",
-            ptSerif.className
-          )}
-          onClick={scrollTo}
-        >
-          HILL
-        </h1>
+        <div className="group flex flex-col">
+          <h1
+            className={cn(
+              "text-[32px] leading-[38px] tracking-[1%] ",
+              ptSerif.className
+            )}
+            onClick={scrollTo}
+          >
+            HILL
+          </h1>
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+        </div>
       </div>
       <nav className="max-sm:hidden">
         <ul className="flex space-x-[32px] font-bold">
